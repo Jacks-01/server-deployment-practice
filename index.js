@@ -5,6 +5,7 @@ const express = require('express');
 const app = express();
 const notFound = require('./error-handling/404');
 const errorHandler = require('./error-handling/500');
+const PORT = process.env.PORT || 3001
 
 
 app.get('/', (req, res, next) => {
@@ -20,6 +21,6 @@ app.use('*', notFound);
 
 app.use(errorHandler)
 
-app.listen(3001, () => {
+app.listen(PORT, () => {
     console.log('app is listening on port 3001')
 }); 
