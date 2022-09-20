@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage",
     "devStart": "nodemon index.js"
-  },
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jacks-01/server-deployment-practice.git"

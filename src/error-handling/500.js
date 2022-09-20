@@ -7,6 +7,6 @@ module.exports = (error, req, res, next) => {
     route: req.path,
     query: req.query,
     body: req.body,
-    message: `SERVER ERROR ${error.message}`,
+    message: `this is a bad route`,
   });
 };
