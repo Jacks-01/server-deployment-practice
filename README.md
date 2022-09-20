@@ -10,3 +10,4 @@ modules become testable! thunder client (or the browser for get requests)
 Jest Expect Methods
 Continuous Integration (CI)
 deploy staging environment AND production environment to Heroku
+
